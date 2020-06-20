@@ -207,7 +207,7 @@ public class Game : MonoBehaviour
         {
             gameStarted = true;
 
-            nextTetromino = (GameObject)Instantiate(Resources.Load(GetRandomTetermino(), typeof(GameObject)), new Vector2(5.0f, 20.0f), Quaternion.identity);
+            nextTetromino = (GameObject)Instantiate(Resources.Load(GetRandomTetermino(), typeof(GameObject)), new Vector2(6.0f, 20.0f), Quaternion.identity);
             previewTetromino = (GameObject)Instantiate(Resources.Load(GetRandomTetermino(), typeof(GameObject)), previewTetrominoPosition, Quaternion.identity);
             previewTetromino.GetComponent<Tetromino>().enabled = false;
 
